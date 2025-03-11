@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Delest Camisetas - Tienda Online
 
-## Getting Started
+## Descripción
+Aplicación web para la venta y reserva de camisetas Delest, con formulario de contacto y pago integrado.
 
-First, run the development server:
+## Características
+- Reserva y compra de camisetas
+- Selección de color y talla
+- Pago con Stripe
+- Formulario de contacto
+- Responsive design
 
+## Requisitos Previos
+- Node.js (v18 o superior)
+- npm
+
+## Instalación
+
+1. Clonar el repositorio
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/tu-usuario/delest-camisetas.git
+cd delest-camisetas
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instalar dependencias
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configurar variables de entorno
+Crea un archivo `.env.local` con las siguientes variables:
+```
+# Stripe
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=tu_clave_publica_de_stripe
+STRIPE_SECRET_KEY=tu_clave_secreta_de_stripe
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# URL base
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
 
-## Learn More
+# Correo electrónico
+EMAIL_USER=tu_correo@gmail.com
+EMAIL_PASS=tu_contraseña_de_aplicacion
+EMAIL_RECIPIENT=correo_de_destino@ejemplo.com
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Ejecutar la aplicación
+```bash
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Despliegue
+- Configurar las variables de entorno en tu plataforma de hosting
+- Usar `npm run build` para generar la versión de producción
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Tecnologías
+- Next.js
+- React
+- Tailwind CSS
+- Stripe
+- Nodemailer
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Licencia
+[Especificar la licencia]
