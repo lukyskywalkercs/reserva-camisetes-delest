@@ -1,7 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   output: 'standalone', // Para optimizar el despliegue
   reactStrictMode: true, // Habilitar modo estricto de React
   swcMinify: true, // Usar SWC para minificación
@@ -18,4 +16,4 @@ const nextConfig: NextConfig = {
   }
 };
 
-export default nextConfig;
+module.exports = nextConfig; 
