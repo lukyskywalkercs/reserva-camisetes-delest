@@ -1,4 +1,4 @@
-# Delest Camisetas - Tienda Online
+# Delest nuevas Camisetas - Reserva online
 
 ## Descripción
 Aplicación web para la venta y reserva de camisetas Delest, con formulario de contacto y pago integrado.
